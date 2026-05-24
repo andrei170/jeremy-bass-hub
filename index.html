@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Built for Jeremy Bass by AG1 Consulting</title>
+<meta name="description" content="A redesigned prime-property website and search plan built specifically for Jeremy Bass Estate Agents by AG1 Consulting. Turning 25 years of Primrose Hill expertise into more instructions.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Built for Jeremy Bass, by AG1 Consulting">
+<meta property="og:description" content="A redesigned prime-property site + valuation plan, built before we ever speak.">
+<meta property="og:url" content="https://andrei170.github.io/jeremy-bass-hub/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Built for Jeremy Bass, by AG1 Consulting">
+<meta name="twitter:description" content="A redesigned prime-property site + valuation plan, built before we ever speak.">
+<link rel="icon" href="data:image/svg+xml,&lt;svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'&gt;&lt;text y='.9em' font-size='90'&gt;⚡&lt;/text&gt;&lt;/svg&gt;">
+<style>
+  :root{--gold:#C9973A;--gold2:#D4A84B;--bg:#000;--surface:rgba(255,255,255,.04);--line:rgba(255,255,255,.1);--text:#f3f4f6;--muted:#9aa0aa}
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:'Inter',-apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  body::before{content:"";position:fixed;inset:0;z-index:-2;background:radial-gradient(700px 460px at 82% -6%,rgba(201,151,58,.16),transparent 60%),radial-gradient(620px 460px at 8% 6%,rgba(120,150,200,.1),transparent 60%)}
+  body::after{content:"";position:fixed;inset:0;z-index:-2;opacity:.5;background-image:linear-gradient(rgba(201,151,58,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(201,151,58,.05) 1px,transparent 1px);background-size:46px 46px;mask-image:radial-gradient(circle at 50% 25%,#000,transparent 80%)}
+  #prog{position:fixed;top:0;left:0;height:3px;width:0;z-index:99;background:linear-gradient(90deg,var(--gold2),var(--gold));box-shadow:0 0 14px rgba(201,151,58,.55)}
+  .ticker{position:relative;z-index:5;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:rgba(0,0,0,.4);overflow:hidden;white-space:nowrap}
+  .ticker .run{display:inline-block;padding:10px 0;animation:tick 30s linear infinite;font-family:ui-monospace,monospace;font-size:12.5px;letter-spacing:1.5px;color:var(--muted)}
+  .ticker .run span{margin:0 24px}.ticker .run b{color:var(--gold)}
+  @keyframes tick{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+  .glow{box-shadow:0 0 0 1px rgba(201,151,58,.16),0 24px 60px -34px rgba(201,151,58,.45)}
+  .wrap{max-width:920px;margin:0 auto;padding:0 22px}
+  a{color:inherit}
+  .btn{display:inline-block;background:linear-gradient(90deg,var(--gold2),var(--gold));color:#111;font-weight:800;padding:15px 32px;border-radius:9px;text-decoration:none;transition:transform .15s ease}
+  .btn:hover{transform:translateY(-2px)}
+  .gold{color:var(--gold)}
+  section{padding:54px 0}
+  .reveal{opacity:0;transform:translateY(22px);transition:.7s ease}
+  .reveal.in{opacity:1;transform:none}
+  header.top{padding:64px 0 30px;text-align:center}
+  .badge{display:inline-block;border:1px solid var(--line);border-radius:30px;padding:7px 16px;font-size:13px;color:var(--muted);letter-spacing:1px;text-transform:uppercase;margin-bottom:22px}
+  h1{font-size:clamp(30px,5.5vw,50px);font-weight:800;letter-spacing:-1px;line-height:1.08}
+  h1 .gold{display:block}
+  .sub{color:var(--muted);font-size:18px;margin-top:16px;max-width:640px;margin-left:auto;margin-right:auto}
+  .stats{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin:34px 0 6px}
+  .stat{background:var(--surface);backdrop-filter:blur(8px);border:1px solid var(--line);border-radius:14px;padding:18px 26px;min-width:150px}
+  .stat b{display:block;font-size:30px;font-weight:800;background:linear-gradient(90deg,var(--gold2),var(--gold));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+  .stat small{color:var(--muted);font-size:13px}
+  h2{font-size:26px;font-weight:800;margin-bottom:6px}
+  .lede{color:var(--muted);margin-bottom:22px}
+  .acc{background:var(--surface);backdrop-filter:blur(8px);border:1px solid var(--line);border-radius:14px;margin-bottom:14px;overflow:hidden}
+  .acc>button{width:100%;text-align:left;background:none;border:none;color:var(--text);font-size:18px;font-weight:700;padding:20px 22px;cursor:pointer;display:flex;justify-content:space-between;gap:14px;align-items:center}
+  .acc .body{max-height:0;overflow:hidden;transition:max-height .4s ease}
+  .acc .body .pad{padding:0 22px 22px;color:var(--muted)}
+  .acc.open .body{max-height:1600px}
+  .acc .tag{font-size:11px;color:var(--gold);border:1px solid var(--line);border-radius:20px;padding:3px 10px;letter-spacing:.5px}
+  .gap{border-left:3px solid var(--gold);padding:12px 0 12px 16px;margin:14px 0}
+  .gap b{color:var(--text)}
+  .angle{padding:14px 0;border-bottom:1px solid var(--line)}
+  .angle:last-child{border-bottom:none}
+  .angle h4{color:var(--gold);font-size:16px;margin-bottom:4px}
+  .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+  .step{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:18px}
+  .step b{color:var(--gold);font-size:13px}
+  .cta{text-align:center;background:linear-gradient(180deg,rgba(201,151,58,.12),transparent);border:1px solid var(--line);border-radius:20px;padding:46px 26px}
+  footer{border-top:1px solid var(--line);color:var(--muted);font-size:13px;padding:26px 0;text-align:center}
+  ul{margin:8px 0 8px 18px}
+  @media(max-width:760px){.steps{grid-template-columns:1fr 1fr}}
+</style>
+</head>
+<body>
+<div id="prog"></div>
+<div class="ticker"><div class="run" id="run"><span>BUILT FOR <b>JEREMY BASS</b></span><span>◆</span><span>PRIME PROPERTY WEBSITE</span><span>◆</span><span><b>PRIMROSE HILL SEO</b></span><span>◆</span><span>VALUATION FUNNEL</span><span>◆</span><span><b>VENDOR TRUST</b></span><span>◆</span><span>BY AG1 CONSULTING</span><span>◆</span></div></div>
+
+<header class="top"><div class="wrap reveal in">
+  <div class="badge">AG1 Consulting &nbsp;×&nbsp; Jeremy Bass</div>
+  <h1>I built this for you, Jeremy.<span class="gold">A prime-property website worthy of the homes you sell.</span></h1>
+  <p class="sub">You have sold Primrose Hill village for 25 years. The reputation is the envy of the chains. The problem is the website: it looks like a budget brochure for an agency handling multi-million-pound homes, and vendors searching for an agent never find you. This is what fixing that looks like, built before we ever speak.</p>
+  <div class="stats">
+    <div class="stat"><b data-c="25">0</b><small>years of village expertise to show off</small></div>
+    <div class="stat"><b data-c="0">0</b><small>testimonials on the site today</small></div>
+    <div class="stat"><b data-c="0">0</b><small>market guides ranking for "Primrose Hill agent"</small></div>
+  </div>
+</div></header>
+
+<section><div class="wrap">
+  <h2 class="reveal">What I see right now</h2>
+  <p class="lede reveal">A quick, honest read on where instructions are slipping away before we build anything.</p>
+
+  <div class="acc reveal"><button>The full picture <span class="tag">research</span></button><div class="body"><div class="pad">
+    <p>You have what every agent wants: 25 years on one of London's best patches, an FNAEA fellow at the helm, and a personal service the chains cannot match. The reputation is real. The website simply does not carry it. For a brand selling homes worth millions, the digital shopfront is the weak link, and it is costing you instructions. All fixable fast.</p>
+    <div class="gap"><b>Gap 1: The site undersells a prime brand.</b> Sparse pages, no proper property search, no real presentation. A vendor with a multi-million-pound home expects the agent's website to feel as considered as the house. Right now it does not.</div>
+    <div class="gap"><b>Gap 2: No proof, anywhere.</b> Twenty-five years of prime sales and not a single testimonial, sold story or stat on the site. The one thing a nervous vendor wants to see before instructing you is missing.</div>
+    <div class="gap"><b>Gap 3: Invisible when vendors search.</b> No market content, no area guides. When someone searches "estate agent Primrose Hill" or "what is my NW1 home worth", the portals and big chains show up and the local specialist does not.</div>
+  </div></div></div>
+
+  <div class="acc reveal"><button>How I would position you <span class="tag">positioning</span></button><div class="body"><div class="pad">
+    <div class="angle"><h4>The village specialist</h4><p>Lead with the one thing the chains can never claim: 25 years on a single square mile. Owner-run, hyper-local, personal. That is the whole pitch to a prime vendor.</p></div>
+    <div class="angle"><h4>You get Jeremy, not a junior</h4><p>Make the personal service the hero. One point of contact, founder-led, from valuation to completion. It is exactly what high-value sellers actually want.</p></div>
+    <div class="angle"><h4>Homes presented properly</h4><p>A photo-led, searchable property experience that finally matches the price bracket, so your listings look as good as the houses themselves.</p></div>
+    <div class="angle"><h4>Found before they decide</h4><p>Market guides and local content so that when a Primrose Hill owner researches who to instruct, you are the authority they find first.</p></div>
+  </div></div></div>
+
+  <div class="acc reveal"><button>Your redesigned website (live) <span class="tag">preview</span></button><div class="body"><div class="pad">
+    <p>I rebuilt your homepage as a prime-property site worthy of the address: a photo-led property search, your 25-year village-specialist story, the founder-led personal service, a valuation capture, and the credibility a multi-million-pound vendor expects. It is live right now:</p>
+    <p style="margin:14px 0"><a class="btn" href="https://andrei170.github.io/jeremy-bass-landing/" target="_blank">Open your new website</a></p>
+    <p>This is the brand you have built offline, finally matched online.</p>
+  </div></div></div>
+</div></section>
+
+<section><div class="wrap">
+  <h2 class="reveal">How I would build the whole thing</h2>
+  <div class="steps" style="margin-top:18px">
+    <div class="step reveal"><b>01</b><p>A prime-property redesign with a real, photo-led property search.</p></div>
+    <div class="step reveal"><b>02</b><p>Vendor testimonials and sold stories that build instant trust.</p></div>
+    <div class="step reveal"><b>03</b><p>Market guides + local SEO for "Primrose Hill estate agent / valuation".</p></div>
+    <div class="step reveal"><b>04</b><p>A hard valuation-booking flow so more vendors reach out to you.</p></div>
+  </div>
+</div></section>
+
+<section><div class="wrap"><div class="cta reveal glow">
+  <h2>Want me to build the real version?</h2>
+  <p class="lede" style="max-width:560px;margin:10px auto 24px">Everything here is yours to keep either way, Jeremy. If you want the full site built and your agency found by the vendors searching in NW1 every day, let us talk.</p>
+  <a class="btn" href="https://calendly.com/ag-copy/call-with-andrei" target="_blank">Book a call with AG1 Consulting</a>
+</div></div></section>
+
+<footer><div class="wrap">Built specifically for Jeremy Bass Estate Agents by AG1 Consulting. Full-stack websites and search visibility for prime local agencies.</div></footer>
+<script>
+  const prog=document.getElementById('prog');addEventListener('scroll',()=>{const h=document.documentElement;prog.style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight)*100)+'%';});
+  const run=document.getElementById('run');run.innerHTML+=run.innerHTML;
+  const io=new IntersectionObserver((es)=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('in')}),{threshold:.1});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+  document.querySelectorAll('.acc>button').forEach(b=>b.addEventListener('click',()=>{b.parentElement.classList.toggle('open');}));
+  function countUp(el){const t=+el.dataset.c;if(!t){el.textContent='0';return;}let n=0;const step=Math.max(1,Math.floor(t/40));const id=setInterval(()=>{n+=step;if(n>=t){n=t;clearInterval(id);}el.textContent=n;},25);}
+  const io2=new IntersectionObserver((es)=>es.forEach(e=>{if(e.isIntersecting){countUp(e.target);io2.unobserve(e.target);}}),{threshold:.5});
+  document.querySelectorAll('.stat b[data-c]').forEach(el=>io2.observe(el));
+</script>
+</body>
+</html>
